@@ -1,4 +1,4 @@
-package com.app.ddd.core.Integration.environnement_travail;
+package com.app.ddd.core.integration.environnement_travail;
 
 import com.app.ddd.core.model.ValueObject;
 
