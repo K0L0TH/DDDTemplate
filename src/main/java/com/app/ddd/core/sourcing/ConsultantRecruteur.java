@@ -21,6 +21,11 @@ public class ConsultantRecruteur extends Personne {
     }
 
     public int canTest(Candidat candidat){
-        return this.profile.compareTo(candidat.getProfile());
+        Profile comparedTo = candidat.getProfile();
+        if(this.profile.getCompetence().equals(comparedTo.getCompetence())){
+            return 0;
+        }else{
+            return -1;
+        }
     }
 }

@@ -31,7 +31,9 @@ public class Candidat extends Personne {
     public int compareTo(Object o) {
         if(o instanceof Candidat){
             Candidat comparedTo = (Candidat)o;
-            return comparedTo.profile.compareTo(this.profile);
+            if(comparedTo.getProfile().compareTo(this.profile) == 0 &&
+                    comparedTo.isContacted() == this.contacted);
+            return 0;
         }
         return -1;
     }
