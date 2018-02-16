@@ -3,6 +3,7 @@ package com.app.ddd.core.integration.role;
 import com.app.ddd.core.integration.CV.Identite;
 import com.app.ddd.core.integration.CV.Profil;
 import com.app.ddd.core.model.Entity;
+import com.app.ddd.core.model.Id;
 
 /**
  * Created by Nicolas_Travail on 16/02/2018.
@@ -30,6 +31,15 @@ public class Employe extends Entity {
     public Employe(Profil profil, Identite identite) {
         this.profil = profil;
         this.identite = identite;
+    }
+    //normalement les id doivent être générés automatiquement
+    public Id getGlobalId(){
+        return globalId;
+    }
+    public void setGlobalId(int id){
+        Id globalid = new Id();
+        globalid.setId(id);
+        this.globalId=globalid;
     }
 
     public Employe() {

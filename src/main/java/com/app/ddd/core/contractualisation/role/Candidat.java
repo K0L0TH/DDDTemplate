@@ -11,4 +11,8 @@ public class Candidat extends Personne {
     public Candidat(String firstName, String lastName) {
         super(firstName, lastName);
     }
+
+    public Candidat() {
+
+    }
 }

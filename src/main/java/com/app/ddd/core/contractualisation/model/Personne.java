@@ -11,6 +11,9 @@ public abstract class Personne extends Entity {
     private String firstName;
     private String lastName;
 
+    protected Personne() {
+    }
+
     public String getFirstName() {
         return firstName;
     }
