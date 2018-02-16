@@ -15,4 +15,12 @@ public class Profil extends ValueObject {
             return res;
         return experience.compareTo(((Profil)o).experience);
     }
+
+    public Profil(String competence, Integer experience) {
+        this.competence = competence;
+        this.experience = experience;
+    }
+
+    public Profil() {
+    }
 }

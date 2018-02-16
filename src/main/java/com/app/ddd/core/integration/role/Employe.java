@@ -26,4 +26,12 @@ public class Employe extends Entity {
     public void setIdentite(Identite identite) {
         this.identite = identite;
     }
+
+    public Employe(Profil profil, Identite identite) {
+        this.profil = profil;
+        this.identite = identite;
+    }
+
+    public Employe() {
+    }
 }

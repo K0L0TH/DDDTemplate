@@ -34,6 +34,15 @@ public class Identite extends ValueObject {
         this.numeroSecuriteSociale = numeroSecuriteSociale;
     }
 
+    public Identite(String nom, String prenom, String numeroSecuriteSociale) {
+        this.nom = nom;
+        this.prenom = prenom;
+        this.numeroSecuriteSociale = numeroSecuriteSociale;
+    }
+
+    public Identite() {
+    }
+
     @Override
     public int compareTo(Object o) {
         return 0;
