@@ -9,6 +9,7 @@ import com.app.ddd.core.model.Personne;
 public class Candidat extends Personne {
 
     private Profile profile;
+    private boolean contacted;
 
     public Candidat(String firstName, String lastName, Id globalId, Profile profile) {
         super(firstName, lastName, globalId);
@@ -20,6 +21,10 @@ public class Candidat extends Personne {
       this.profile = profile;
     }
 
+    public Profile getProfile() {
+        return profile;
+    }
+
     @Override
     public int compareTo(Object o) {
         if(o instanceof Candidat){
@@ -28,4 +33,14 @@ public class Candidat extends Personne {
         }
         return -1;
     }
+
+    public boolean isContacted(){
+        return contacted;
+    }
+
+    public void setContacted(boolean contacted){
+        this.contacted = contacted;
+    }
+
+
 }
