@@ -32,14 +32,15 @@ public class Daf extends ValueObject{
         this.rh = rh;
     }
 
+    public Contrat creerContrat(Double salaire,Candidat candidat){
 
-    /*public Contrat creerContrat(Double salaire,){
-
-       //DateTime dateArrivee,DateTime dateSignature, Double salaire,Candidat candidat
         DateTime dateSignature = new DateTime(DateTimeZone.UTC);
+        return new Contrat(dateSignature.plusMonths(3),dateSignature.plusMonths(1),salaire,candidat);
+    }
 
-        return new Contrat(, , ,);
-    }*/
+    public Double determineSalaire(){
+        return new Double(450000);
+    }
 
     @Override
     public int compareTo(Object o) {

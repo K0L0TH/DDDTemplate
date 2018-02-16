@@ -1,6 +1,7 @@
 package com.app.ddd.core.repository;
 
 import com.app.ddd.core.contractualisation.ContratAggregate;
+import com.app.ddd.core.planification.entretien.EntretienAgregate;
 import com.app.ddd.core.sourcing.CTO;
 import com.app.ddd.core.sourcing.Candidat;
 import com.app.ddd.core.sourcing.ChargeRecrutement;
@@ -18,6 +19,7 @@ public class Repository {
     private List<ChargeRecrutement> cRList;
     private List<ConsultantRecruteur> recruteurList;
     private List<ContratAggregate> contrats;
+    private List<EntretienAgregate> entretiens;
     private CTO cto;
 
     public Repository(CTO cto){
@@ -25,11 +27,16 @@ public class Repository {
         this.cRList = new ArrayList<ChargeRecrutement>();
         this.recruteurList = new ArrayList<ConsultantRecruteur>();
         this.contrats = new ArrayList<ContratAggregate>();
+        this.entretiens = new ArrayList<EntretienAgregate>();
         this.cto = cto;
     }
 
     public void addContrat(ContratAggregate contrat){
         this.contrats.add(contrat);
+    }
+
+    public void addEntretiens(EntretienAgregate entretiens){
+        this.entretiens.add(entretiens);
     }
 
     public void addCandidat(Candidat candidat){
@@ -82,5 +89,13 @@ public class Repository {
 
     public void setContrats(List<ContratAggregate> contrats) {
         this.contrats = contrats;
+    }
+
+    public List<EntretienAgregate> getEntretiens() {
+        return entretiens;
+    }
+
+    public void setEntretiens(List<EntretienAgregate> entretiens) {
+        this.entretiens = entretiens;
     }
 }
