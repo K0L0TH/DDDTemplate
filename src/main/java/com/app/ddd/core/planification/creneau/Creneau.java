@@ -9,7 +9,7 @@ public class Creneau {
     private DateTime finEntretien;
     private String creneau;
 
-    Creneau(int year, int month, int day, int heure, int duree) {
+    public Creneau(int year, int month, int day, int heure, int duree) {
         if(creneauEstCoherent(year, month, day, heure, duree)){
             this.debutEntretien = new DateTime(year, month, day, heure, 0, 0, 0);
             this.finEntretien = new DateTime(year, month, day, heure + duree, 0, 0, 0);

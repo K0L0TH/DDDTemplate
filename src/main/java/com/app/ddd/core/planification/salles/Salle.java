@@ -15,18 +15,20 @@ public class Salle {
         creneauIndisponibilite = new ArrayList<>();
     }
 
-    public boolean reserverUneSalle(Creneau creneau){
-       if(salleEstDisponiblePourEntretien(creneau, creneauIndisponibilite))
+    public boolean reserverUneSalle(Creneau creneau) {
+        if (salleEstDisponiblePourEntretien(creneau, creneauIndisponibilite)) {
             creneauIndisponibilite.add(creneau);
-        else{
-            return false;
+            return true;
         }
-       return true;
+       return false;
     }
 
-    public boolean salleEstDisponiblePourEntretien(Creneau c, ArrayList<Creneau> list){
-        ListUtils<Creneau> listUtils = new ListUtils<>();
-        //return listUtils.listCountainsOneElementsInCommon(c, list);
-        return false;
+    private boolean salleEstDisponiblePourEntretien(Creneau c, ArrayList<Creneau> list){
+        ListUtils<String> listUtils = new ListUtils<>();
+        ArrayList<String> d = new ArrayList<>();
+        for(Creneau o : creneauIndisponibilite){
+            d.add(o.toString());
+        }
+        return listUtils.listCountainsOneElementInCommon(d, c.toString());
     }
 }
