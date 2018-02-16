@@ -1,6 +1,5 @@
 package com.app.ddd.core.repository;
 
-import com.app.ddd.core.contractualisation.Contrat;
 import com.app.ddd.core.contractualisation.ContratAggregate;
 import com.app.ddd.core.sourcing.CTO;
 import com.app.ddd.core.sourcing.Candidat;

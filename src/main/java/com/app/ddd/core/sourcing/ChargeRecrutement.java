@@ -8,16 +8,12 @@ import com.app.ddd.core.model.Personne;
  */
 public class ChargeRecrutement extends Personne {
 
-    private Profile profile;
-
-    public ChargeRecrutement(String firstName, String lastName, Id globalId, Profile profil) {
+    public ChargeRecrutement(String firstName, String lastName, Id globalId) {
         super(firstName, lastName, globalId);
-        this.profile = profil;
     }
 
-    public ChargeRecrutement(String firstName, String lastName, Profile profile) {
+    public ChargeRecrutement(String firstName, String lastName) {
         super(firstName, lastName);
-        this.profile = profile;
     }
 
     public void contactCandidate(Candidat candidat){
@@ -26,13 +22,5 @@ public class ChargeRecrutement extends Personne {
 
     public int demanderCTO(CTO cto, Candidat candidat){
         return cto.analyserProfil(candidat);
-    }
-
-    public Profile getProfile() {
-        return profile;
-    }
-
-    public void setProfile(Profile profile) {
-        this.profile = profile;
     }
 }
