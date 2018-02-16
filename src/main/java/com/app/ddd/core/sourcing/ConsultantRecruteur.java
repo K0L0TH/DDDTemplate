@@ -10,12 +10,14 @@ public class ConsultantRecruteur extends Personne {
 
     private Profile profile;
 
-    public ConsultantRecruteur(String firstName, String lastName, Id globalId) {
+    public ConsultantRecruteur(String firstName, String lastName, Id globalId, Profile profile) {
         super(firstName, lastName, globalId);
+        this.profile = profile;
     }
 
-    public ConsultantRecruteur(String firstName, String lastName) {
+    public ConsultantRecruteur(String firstName, String lastName, Profile profile) {
         super(firstName, lastName);
+        this.profile = profile;
     }
 
     public int canTest(Candidat candidat){
