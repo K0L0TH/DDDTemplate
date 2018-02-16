@@ -20,10 +20,6 @@ public class ChargeRecrutement extends Personne {
         this.profile = profile;
     }
 
-    public int canTest(Candidat candidat){
-        return this.profile.compareTo(candidat.getProfile());
-    }
-
     public void contactCandidate(Candidat candidat){
         candidat.setContacted(true);
     }
