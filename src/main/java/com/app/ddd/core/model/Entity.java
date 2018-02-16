@@ -5,7 +5,8 @@ package com.app.ddd.core.model;
  */
 public abstract class Entity implements Comparable{
 
-    private Id globalId;
+    protected Id globalId;
+
 
 
 }
