@@ -1,6 +1,6 @@
-package com.app.ddd.core.Integration.cas_utilisation.creer_comptes;
+package com.app.ddd.core.integration.cas_utilisation.creer_comptes;
 
-import com.app.ddd.core.Integration.role.Employe;
+import com.app.ddd.core.integration.role.Employe;
 
 /**
  * Created by Nicolas_Travail on 16/02/2018.

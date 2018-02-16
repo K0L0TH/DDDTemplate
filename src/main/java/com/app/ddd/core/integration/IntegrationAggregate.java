@@ -1,14 +1,15 @@
-package com.app.ddd.core.Integration;
+package com.app.ddd.core.integration;
 
-import com.app.ddd.core.Integration.role.Employe;
-import com.app.ddd.core.Integration.role.RH;
+import com.app.ddd.core.integration.role.Employe;
+import com.app.ddd.core.integration.role.RH;
+import com.app.ddd.core.contractualisation.ContratAggregate;
 import com.app.ddd.core.model.Aggregate;
 
 /**
  * Created by Nicolas_Travail on 16/02/2018.
  */
 public class IntegrationAggregate extends Aggregate{
-    ContratAgregate contrat;
+    ContratAggregate contrat;
     Employe employe;
     RH rh;
 
@@ -17,5 +18,5 @@ public class IntegrationAggregate extends Aggregate{
         this.rh = rh;
     }
 
-    
+
 }

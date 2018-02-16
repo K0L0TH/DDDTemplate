@@ -1,8 +1,8 @@
-package com.app.ddd.core.Integration.role;
+package com.app.ddd.core.integration.role;
 
-import com.app.ddd.core.Integration.CV.Identite;
-import com.app.ddd.core.Integration.cas_utilisation.creer_comptes.CreerMail;
-import com.app.ddd.core.Integration.cas_utilisation.creer_comptes.CreerSlack;
+import com.app.ddd.core.integration.CV.Identite;
+import com.app.ddd.core.integration.cas_utilisation.creer_comptes.CreerMail;
+import com.app.ddd.core.integration.cas_utilisation.creer_comptes.CreerSlack;
 import com.app.ddd.core.model.ValueObject;
 
 /**

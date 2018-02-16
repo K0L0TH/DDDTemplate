@@ -1,4 +1,4 @@
-package com.app.ddd.core.Integration.CV;
+package com.app.ddd.core.integration.CV;
 
 import com.app.ddd.core.model.ValueObject;
 
