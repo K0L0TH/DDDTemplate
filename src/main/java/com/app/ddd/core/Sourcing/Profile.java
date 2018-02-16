@@ -27,4 +27,10 @@ public class Profile extends ValueObject {
         }
         return -1;
     }
+
+    public boolean isValid(){
+        if(this.nbAnneeXP >= 1)
+            return true;
+        return false;
+    }
 }

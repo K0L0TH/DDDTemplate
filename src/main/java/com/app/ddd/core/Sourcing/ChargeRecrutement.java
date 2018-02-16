@@ -27,4 +27,8 @@ public class ChargeRecrutement extends Personne {
     public void contactCandidate(Candidat candidat){
         candidat.setContacted(true);
     }
+
+    public int demanderCTO(CTO cto, Candidat candidat){
+        return cto.analyserProfil(candidat);
+    }
 }

@@ -14,11 +14,13 @@ public class Candidat extends Personne {
     public Candidat(String firstName, String lastName, Id globalId, Profile profile) {
         super(firstName, lastName, globalId);
         this.profile = profile;
+        this.contacted = false;
     }
 
     public Candidat(String firstName, String lastName, Profile profile){
       super(firstName, lastName);
       this.profile = profile;
+      this.contacted = false;
     }
 
     public Profile getProfile() {
