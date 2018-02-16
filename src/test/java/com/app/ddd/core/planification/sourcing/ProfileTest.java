@@ -12,7 +12,7 @@ public class ProfileTest {
     @Test
     public void shouldCompareProfiles(){
         Profile p1 = new Profile("JAVA", 1);
-        Profile p2 = new Profile("JAVA", 3);
+        Profile p2 = new Profile("JAVA", 1);
 
         Assert.assertEquals(0, p1.compareTo(p2));
     }
