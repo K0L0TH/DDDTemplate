@@ -42,4 +42,12 @@ public class Profile extends ValueObject {
     public int getNbAnneeXP() {
         return nbAnneeXP;
     }
+
+    public void setCompetence(String competence) {
+        this.competence = competence;
+    }
+
+    public void setNbAnneeXP(int nbAnneeXP) {
+        this.nbAnneeXP = nbAnneeXP;
+    }
 }

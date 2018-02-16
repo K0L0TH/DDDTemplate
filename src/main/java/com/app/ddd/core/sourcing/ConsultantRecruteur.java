@@ -28,4 +28,12 @@ public class ConsultantRecruteur extends Personne {
             return -1;
         }
     }
+
+    public Profile getProfile() {
+        return profile;
+    }
+
+    public void setProfile(Profile profile) {
+        this.profile = profile;
+    }
 }
