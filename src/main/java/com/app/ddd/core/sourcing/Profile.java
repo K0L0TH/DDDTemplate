@@ -1,4 +1,4 @@
-package com.app.ddd.core.Sourcing;
+package com.app.ddd.core.sourcing;
 
 import com.app.ddd.core.model.ValueObject;
 
@@ -19,7 +19,8 @@ public class Profile extends ValueObject {
     public int compareTo(Object o) {
         if(o instanceof Profile){
             Profile comparedTo = (Profile)o;
-            if(comparedTo.competence.equals(this.competence)){
+            if(comparedTo.getCompetence().equals(this.competence) &&
+                    comparedTo.getNbAnneeXP() == this.nbAnneeXP){
                 return 0;
             }else{
                 return -1;
@@ -32,5 +33,13 @@ public class Profile extends ValueObject {
         if(this.nbAnneeXP >= 1)
             return true;
         return false;
+    }
+
+    public String getCompetence() {
+        return competence;
+    }
+
+    public int getNbAnneeXP() {
+        return nbAnneeXP;
     }
 }

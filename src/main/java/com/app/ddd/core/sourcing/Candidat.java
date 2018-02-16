@@ -1,4 +1,4 @@
-package com.app.ddd.core.Sourcing;
+package com.app.ddd.core.sourcing;
 
 import com.app.ddd.core.model.Id;
 import com.app.ddd.core.model.Personne;
@@ -31,7 +31,9 @@ public class Candidat extends Personne {
     public int compareTo(Object o) {
         if(o instanceof Candidat){
             Candidat comparedTo = (Candidat)o;
-            return comparedTo.profile.compareTo(this.profile);
+            if(comparedTo.getProfile().compareTo(this.profile) == 0 &&
+                    comparedTo.isContacted() == this.contacted);
+            return 0;
         }
         return -1;
     }

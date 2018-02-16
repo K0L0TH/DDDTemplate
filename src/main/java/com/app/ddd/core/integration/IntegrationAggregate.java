@@ -4,6 +4,7 @@ import com.app.ddd.core.integration.role.Employe;
 import com.app.ddd.core.integration.role.RH;
 import com.app.ddd.core.contractualisation.ContratAggregate;
 import com.app.ddd.core.model.Aggregate;
+import com.app.ddd.core.contractualisation.*;
 
 /**
  * Created by Nicolas_Travail on 16/02/2018.
