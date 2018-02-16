@@ -3,9 +3,9 @@ package com.app.ddd.core.model;
 /**
  * Created by bench on 16/02/2018.
  */
-public abstract class Entity {
+public abstract class Entity implements Comparable{
 
-    private Integer valueObjectGlobalId;
+    private Id globalId;
 
 
 }
