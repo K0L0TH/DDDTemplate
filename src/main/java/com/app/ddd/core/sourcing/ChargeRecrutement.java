@@ -27,4 +27,12 @@ public class ChargeRecrutement extends Personne {
     public int demanderCTO(CTO cto, Candidat candidat){
         return cto.analyserProfil(candidat);
     }
+
+    public Profile getProfile() {
+        return profile;
+    }
+
+    public void setProfile(Profile profile) {
+        this.profile = profile;
+    }
 }

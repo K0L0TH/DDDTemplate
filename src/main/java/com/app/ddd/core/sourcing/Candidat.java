@@ -49,5 +49,7 @@ public class Candidat extends Personne {
         this.contacted = contacted;
     }
 
-
+    public void setProfile(Profile profile) {
+        this.profile = profile;
+    }
 }

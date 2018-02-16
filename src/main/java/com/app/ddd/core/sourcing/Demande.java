@@ -30,4 +30,35 @@ public class Demande extends Aggregate {
         return this.recruteur.canTest(candidat);
     }
 
+    public ChargeRecrutement getCR() {
+        return CR;
+    }
+
+    public void setCR(ChargeRecrutement CR) {
+        this.CR = CR;
+    }
+
+    public Candidat getCandidat() {
+        return candidat;
+    }
+
+    public void setCandidat(Candidat candidat) {
+        this.candidat = candidat;
+    }
+
+    public ConsultantRecruteur getRecruteur() {
+        return recruteur;
+    }
+
+    public void setRecruteur(ConsultantRecruteur recruteur) {
+        this.recruteur = recruteur;
+    }
+
+    public CTO getCto() {
+        return cto;
+    }
+
+    public void setCto(CTO cto) {
+        this.cto = cto;
+    }
 }
