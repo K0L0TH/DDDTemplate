@@ -1,18 +1,19 @@
 package com.app.ddd.core.contractualisation;
 
 import com.app.ddd.core.contractualisation.role.Candidat;
-import com.app.ddd.core.model.ValueObject;
+import com.app.ddd.core.model.Entity;
+import org.joda.time.DateTime;
 
 import java.util.Date;
 
 /**
  * Created by kokoghlanian on 16/02/2018.
  */
-public class Contrat extends ValueObject{
+public class Contrat extends Entity{
 
-    private Date dateArrivee;
+    private DateTime dateArrivee;
     private Boolean ContratAccepte;
-    private Date dateSignature;
+    private DateTime dateSignature;
     private Double salaire;
     private Candidat candidat;
 
@@ -20,7 +21,7 @@ public class Contrat extends ValueObject{
         return candidat;
     }
 
-    public Date getDateArrivee() {
+    public DateTime getDateArrivee() {
         return dateArrivee;
     }
 
@@ -28,7 +29,7 @@ public class Contrat extends ValueObject{
         return ContratAccepte;
     }
 
-    public Date getDateSignature() {
+    public DateTime getDateSignature() {
         return dateSignature;
     }
 
@@ -40,16 +41,11 @@ public class Contrat extends ValueObject{
         ContratAccepte = contratAccepte;
     }
 
-    public Contrat(Date dateArrivee,Date dateSignature, Double salaire,Candidat candidat) {
+    public Contrat(DateTime dateArrivee,DateTime dateSignature, Double salaire,Candidat candidat) {
         this.dateArrivee = dateArrivee;
         this.dateSignature = dateSignature;
         this.salaire = salaire;
         this.candidat = candidat;
         this.ContratAccepte = false;
-    }
-
-    @Override
-    public int compareTo(Object o){
-        return 0;
     }
 }
