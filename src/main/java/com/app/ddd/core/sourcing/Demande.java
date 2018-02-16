@@ -12,10 +12,11 @@ public class Demande extends Aggregate {
     private ConsultantRecruteur recruteur;
     private CTO cto;
 
-    public Demande(ChargeRecrutement CR, Candidat candidat, ConsultantRecruteur recruteur) {
+    public Demande(ChargeRecrutement CR, Candidat candidat, ConsultantRecruteur recruteur, CTO cto) {
         this.CR = CR;
         this.candidat = candidat;
         this.recruteur = recruteur;
+        this.cto = cto;
     }
 
     public void contacterCandidat(){
@@ -29,6 +30,8 @@ public class Demande extends Aggregate {
     public int canTest(){
         return this.recruteur.canTest(candidat);
     }
+
+    public int isValidatedByCTO(){return this.CR.demanderCTO(cto, candidat);}
 
     public ChargeRecrutement getCR() {
         return CR;

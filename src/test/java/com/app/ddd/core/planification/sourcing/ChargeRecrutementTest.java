@@ -14,7 +14,7 @@ public class ChargeRecrutementTest {
     @Test
     public void shouldContactCandidat(){
         Candidat c = new Candidat("c","c", new Profile("JAVA", 1));
-        ChargeRecrutement CR = new ChargeRecrutement("CR", "CR", new Profile("JAVA", 5));
+        ChargeRecrutement CR = new ChargeRecrutement("CR", "CR");
         CR.contactCandidate(c);
         Assert.assertEquals(true, c.isContacted());
     }
