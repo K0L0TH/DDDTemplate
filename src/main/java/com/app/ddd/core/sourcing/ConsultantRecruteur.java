@@ -1,6 +1,5 @@
 package com.app.ddd.core.sourcing;
 
-import com.app.ddd.core.Integration.CV.Profil;
 import com.app.ddd.core.model.Id;
 import com.app.ddd.core.model.Personne;
 
