@@ -18,5 +18,10 @@ public class IntegrationAggregate extends Aggregate{
         this.rh = rh;
     }
 
+    public IntegrationAggregate(ContratAggregate contrat){
+        this.contrat=contrat;
+       // employe=new Employe(contrat.getContrat().getCandidat())
+    }
+
 
 }
