@@ -1,13 +1,12 @@
-package com.app.ddd.core.planification.actors;
+package com.app.ddd.core.planification.role;
 
-import com.app.ddd.core.planification.actors.entity.Entity;
-import com.app.ddd.core.planification.actors.entity.Person;
-import com.app.ddd.core.planification.actors.objects.Profil;
+import com.app.ddd.core.model.Entity;
+import com.app.ddd.core.planification.Profil;
 
 import java.util.ArrayList;
 
-public class Candidat extends Entity{
-    private Person person;
+public class Candidat extends Entity {
+    private Personne person;
     private Profil profil;
 
     public Candidat() {

@@ -1,5 +1,6 @@
-package com.app.ddd.core.planification.actors.objects;
+package com.app.ddd.core.planification.role.objects;
 
+import com.app.ddd.core.planification.Profil;
 import org.junit.Test;
 
 import static org.junit.Assert.*;

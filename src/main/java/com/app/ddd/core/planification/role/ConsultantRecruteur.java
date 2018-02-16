@@ -1,21 +1,21 @@
-package com.app.ddd.core.planification.actors;
+package com.app.ddd.core.planification.role;
 
 
-import com.app.ddd.core.planification.actors.entity.Entity;
-import com.app.ddd.core.planification.actors.entity.Person;
-import com.app.ddd.core.planification.actors.objects.Profil;
+import com.app.ddd.core.model.Entity;
+import com.app.ddd.core.planification.Profil;
 import com.app.ddd.core.planification.creneau.Creneau;
 import com.app.ddd.core.planification.utils.ListUtils;
 
 import java.util.ArrayList;
 
 public class ConsultantRecruteur extends Entity {
-    private Person person;
+    private Personne personne;
     private Profil profil;
     private ArrayList<Creneau> creneauxIndisponibilite;
 
     public ConsultantRecruteur(String nom, String prenom, String securiteSociale){
-        person = new Person(nom, prenom, securiteSociale);
+        personne = new Personne(nom, prenom, securiteSociale) {
+        };
         creneauxIndisponibilite = new ArrayList<>();
     }
 

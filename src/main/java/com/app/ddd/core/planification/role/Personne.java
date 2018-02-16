@@ -1,13 +1,11 @@
-package com.app.ddd.core.planification.actors.entity;
+package com.app.ddd.core.planification.role;
 
-import org.joda.time.DateTime;
-
-public class Person {
+public class Personne {
     private String prenom;
     private String nom;
     private String numeroSecuriteSociale;
 
-    public Person(String prenom, String nom, String numeroSecuriteSociale) {
+    public Personne(String prenom, String nom, String numeroSecuriteSociale) {
         this.prenom = prenom;
         this.nom = nom;
         this.numeroSecuriteSociale = numeroSecuriteSociale;

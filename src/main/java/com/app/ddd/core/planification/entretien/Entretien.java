@@ -1,9 +1,10 @@
-package com.app.ddd.core.planification.actors.entity;
+package com.app.ddd.core.planification.entretien;
 
-import com.app.ddd.core.planification.actors.Candidat;
+import com.app.ddd.core.model.Entity;
+import com.app.ddd.core.planification.role.Candidat;
 import com.app.ddd.core.planification.creneau.Creneau;
 import com.app.ddd.core.planification.salles.Salle;
-import com.app.ddd.core.sourcing.ConsultantRecruteur;
+
 
 public class Entretien extends Entity {
     public enum Statut {
@@ -13,7 +14,6 @@ public class Entretien extends Entity {
             ANNULE
     }
     private Candidat candidat;
-    private ConsultantRecruteur consultantRecruteur;
     private Creneau creneau;
     private Salle salle;
 }

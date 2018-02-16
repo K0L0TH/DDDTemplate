@@ -1,7 +1,7 @@
-package com.app.ddd.core.sourcing;
+package com.app.ddd.core.sourcing.role;
 
 import com.app.ddd.core.model.Id;
-import com.app.ddd.core.model.Personne;
+import com.app.ddd.core.sourcing.Personne;
 
 /**
  * Created by bench on 16/02/2018.

@@ -1,29 +1,30 @@
-package com.app.ddd.core.sourcing;
+package com.app.ddd.core.sourcing.role;
 
 import com.app.ddd.core.model.Id;
-import com.app.ddd.core.model.Personne;
+import com.app.ddd.core.sourcing.Personne;
+import com.app.ddd.core.sourcing.cv.Profil;
 
 /**
  * Created by bench on 16/02/2018.
  */
 public class Candidat extends Personne {
 
-    private Profile profile;
+    private Profil profile;
     private boolean contacted;
 
-    public Candidat(String firstName, String lastName, Id globalId, Profile profile) {
+    public Candidat(String firstName, String lastName, Id globalId, Profil profile) {
         super(firstName, lastName, globalId);
         this.profile = profile;
         this.contacted = false;
     }
 
-    public Candidat(String firstName, String lastName, Profile profile){
+    public Candidat(String firstName, String lastName, Profil profile){
       super(firstName, lastName);
       this.profile = profile;
       this.contacted = false;
     }
 
-    public Profile getProfile() {
+    public Profil getProfile() {
         return profile;
     }
 
@@ -49,7 +50,7 @@ public class Candidat extends Personne {
         this.contacted = contacted;
     }
 
-    public void setProfile(Profile profile) {
+    public void setProfile(Profil profile) {
         this.profile = profile;
     }
 }

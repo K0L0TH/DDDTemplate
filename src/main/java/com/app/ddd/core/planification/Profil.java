@@ -1,4 +1,4 @@
-package com.app.ddd.core.planification.actors.objects;
+package com.app.ddd.core.planification;
 
 import com.app.ddd.core.planification.utils.ListUtils;
 

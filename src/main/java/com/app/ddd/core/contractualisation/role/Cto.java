@@ -1,10 +1,8 @@
 package com.app.ddd.core.contractualisation.role;
 
-import com.app.ddd.core.model.Personne;
+import com.app.ddd.core.sourcing.Personne;
 
-/**
- * Created by kokoghlanian on 16/02/2018.
- */
+
 public class Cto extends Personne {
 
     public Cto(String firstName, String lastName) {

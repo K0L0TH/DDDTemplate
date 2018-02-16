@@ -1,13 +1,11 @@
 package com.app.ddd.core.contractualisation.role;
 
-import com.app.ddd.core.contractualisation.Contrat;
+import com.app.ddd.core.contractualisation.contrat.Contrat;
 import com.app.ddd.core.model.ValueObject;
 import org.joda.time.DateTime;
 import org.joda.time.DateTimeZone;
 
-/**
- * Created by kokoghlanian on 16/02/2018.
- */
+
 public class Daf extends ValueObject{
 
     private Cto cto;

@@ -1,4 +1,4 @@
-package com.app.ddd.core.planification.actors;
+package com.app.ddd.core.planification.role;
 
 import com.app.ddd.core.planification.creneau.Creneau;
 import org.junit.Before;

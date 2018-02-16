@@ -1,11 +1,11 @@
 package com.app.ddd.core.repository;
 
-import com.app.ddd.core.contractualisation.ContratAggregate;
-import com.app.ddd.core.planification.entretien.EntretienAgregate;
-import com.app.ddd.core.sourcing.CTO;
-import com.app.ddd.core.sourcing.Candidat;
-import com.app.ddd.core.sourcing.ChargeRecrutement;
-import com.app.ddd.core.sourcing.ConsultantRecruteur;
+import com.app.ddd.core.contractualisation.contrat.ContratAggregat;
+import com.app.ddd.core.planification.entretien.EntretienAgregat;
+import com.app.ddd.core.sourcing.role.CTO;
+import com.app.ddd.core.sourcing.role.Candidat;
+import com.app.ddd.core.sourcing.role.ChargeRecrutement;
+import com.app.ddd.core.sourcing.role.ConsultantRecruteur;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,24 +18,24 @@ public class Repository {
     private List<Candidat> candidateList;
     private List<ChargeRecrutement> cRList;
     private List<ConsultantRecruteur> recruteurList;
-    private List<ContratAggregate> contrats;
-    private List<EntretienAgregate> entretiens;
+    private List<ContratAggregat> contrats;
+    private List<EntretienAgregat> entretiens;
     private CTO cto;
 
     public Repository(CTO cto){
         this.candidateList = new ArrayList<Candidat>();
         this.cRList = new ArrayList<ChargeRecrutement>();
         this.recruteurList = new ArrayList<ConsultantRecruteur>();
-        this.contrats = new ArrayList<ContratAggregate>();
-        this.entretiens = new ArrayList<EntretienAgregate>();
+        this.contrats = new ArrayList<ContratAggregat>();
+        this.entretiens = new ArrayList<EntretienAgregat>();
         this.cto = cto;
     }
 
-    public void addContrat(ContratAggregate contrat){
+    public void addContrat(ContratAggregat contrat){
         this.contrats.add(contrat);
     }
 
-    public void addEntretiens(EntretienAgregate entretiens){
+    public void addEntretiens(EntretienAgregat entretiens){
         this.entretiens.add(entretiens);
     }
 
@@ -83,19 +83,19 @@ public class Repository {
         this.cto = cto;
     }
 
-    public List<ContratAggregate> getContrats() {
+    public List<ContratAggregat> getContrats() {
         return contrats;
     }
 
-    public void setContrats(List<ContratAggregate> contrats) {
+    public void setContrats(List<ContratAggregat> contrats) {
         this.contrats = contrats;
     }
 
-    public List<EntretienAgregate> getEntretiens() {
+    public List<EntretienAgregat> getEntretiens() {
         return entretiens;
     }
 
-    public void setEntretiens(List<EntretienAgregate> entretiens) {
+    public void setEntretiens(List<EntretienAgregat> entretiens) {
         this.entretiens = entretiens;
     }
 }

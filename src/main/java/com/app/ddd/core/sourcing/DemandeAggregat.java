@@ -1,18 +1,22 @@
 package com.app.ddd.core.sourcing;
 
-import com.app.ddd.core.model.Aggregate;
+import com.app.ddd.core.model.Aggregat;
+import com.app.ddd.core.sourcing.role.CTO;
+import com.app.ddd.core.sourcing.role.Candidat;
+import com.app.ddd.core.sourcing.role.ChargeRecrutement;
+import com.app.ddd.core.sourcing.role.ConsultantRecruteur;
 
 /**
  * Created by bench on 16/02/2018.
  */
-public class Demande extends Aggregate {
+public class DemandeAggregat extends Aggregat {
 
     private ChargeRecrutement CR;
     private Candidat candidat;
     private ConsultantRecruteur recruteur;
     private CTO cto;
 
-    public Demande(ChargeRecrutement CR, Candidat candidat, ConsultantRecruteur recruteur, CTO cto) {
+    public DemandeAggregat(ChargeRecrutement CR, Candidat candidat, ConsultantRecruteur recruteur, CTO cto) {
         this.CR = CR;
         this.candidat = candidat;
         this.recruteur = recruteur;

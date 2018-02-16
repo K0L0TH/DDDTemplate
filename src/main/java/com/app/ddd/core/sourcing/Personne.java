@@ -1,8 +1,9 @@
-package com.app.ddd.core.model;
+package com.app.ddd.core.sourcing;
 
-/**
- * Created by bench on 16/02/2018.
- */
+
+import com.app.ddd.core.model.Entity;
+import com.app.ddd.core.model.Id;
+
 public abstract class Personne extends Entity {
 
     private String firstName;

@@ -1,14 +1,11 @@
-package com.app.ddd.core.contractualisation;
+package com.app.ddd.core.contractualisation.contrat;
 
 import com.app.ddd.core.contractualisation.role.Candidat;
 import com.app.ddd.core.model.Entity;
 import org.joda.time.DateTime;
 
-import java.util.Date;
 
-/**
- * Created by kokoghlanian on 16/02/2018.
- */
+
 public class Contrat extends Entity{
 
     private DateTime dateArrivee;

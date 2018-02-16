@@ -1,7 +1,7 @@
 package com.app.ddd.core.integration.role;
 
-import com.app.ddd.core.integration.CV.Identite;
-import com.app.ddd.core.integration.CV.Profil;
+import com.app.ddd.core.integration.cv.Identite;
+import com.app.ddd.core.integration.cv.Profil;
 import com.app.ddd.core.model.Entity;
 
 /**

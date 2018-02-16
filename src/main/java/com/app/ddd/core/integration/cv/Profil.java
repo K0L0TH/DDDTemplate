@@ -1,10 +1,8 @@
-package com.app.ddd.core.integration.CV;
+package com.app.ddd.core.integration.cv;
 
 import com.app.ddd.core.model.ValueObject;
 
-/**
- * Created by Nicolas_Travail on 16/02/2018.
- */
+
 public class Profil extends ValueObject {
     String competence;
     Integer experience;
