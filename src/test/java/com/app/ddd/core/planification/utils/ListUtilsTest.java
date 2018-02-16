@@ -18,12 +18,12 @@ public class ListUtilsTest {
     }
 
     @Test
-    public void listsSouldNotCountainsOneElemnetInCommon(){
+    public void listsSouldNotCountainsOneElementInCommon(){
         a.add("a");
         b.add("b");
 
         ListUtils listUtils = new ListUtils<String>();
-        assertEquals(listUtils.listsCountainsElementsInCommon(a, b), true);
+        assertEquals(listUtils.listsCountainsElementsInCommon(a, b), false);
     }
 
     @Test
@@ -35,13 +35,13 @@ public class ListUtilsTest {
         b.add("a");
 
         ListUtils listUtils = new ListUtils<String>();
-        assertEquals(listUtils.listsCountainsElementsInCommon(a, b), false);
+        assertEquals(listUtils.listsCountainsElementsInCommon(a, b), true);
     }
 
     @Test
     public void listShouldNotCountains(){
         a.add("a");
         ListUtils<String> listUtils = new ListUtils<String>();
-        assertEquals(listUtils.listCountainsOneElementInCommon(a, "a"), false);
+        assertEquals(listUtils.listCountainsOneElementInCommon(a, "a"), true);
     }
 }

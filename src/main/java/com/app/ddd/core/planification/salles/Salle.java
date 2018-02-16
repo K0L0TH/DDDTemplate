@@ -29,6 +29,6 @@ public class Salle {
         for(Creneau o : creneauIndisponibilite){
             d.add(o.toString());
         }
-        return listUtils.listCountainsOneElementInCommon(d, c.toString());
+        return !listUtils.listCountainsOneElementInCommon(d, c.toString());
     }
 }
