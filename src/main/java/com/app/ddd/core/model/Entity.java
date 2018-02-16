@@ -7,5 +7,8 @@ public abstract class Entity implements Comparable{
 
     private Id globalId;
 
-
+    @Override
+    public int compareTo(Object o) {
+        return globalId.compareTo(o);
+    }
 }
