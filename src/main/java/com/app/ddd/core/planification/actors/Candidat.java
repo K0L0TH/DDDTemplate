@@ -14,6 +14,10 @@ public class Candidat extends Entity{
 
     }
 
+    public void ajouterUneCompetence(String competence){
+        profil.ajouterUneCompetence(competence);
+    }
+
     public ArrayList<String> recupererCompetences(){
         return profil.recupererCompetences();
     }

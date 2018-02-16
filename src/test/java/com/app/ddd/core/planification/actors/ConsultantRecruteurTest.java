@@ -6,14 +6,14 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class ChargeeRecrutementTest {
-    private ChargeeRecrutement chargeeRecrutement;
+public class ConsultantRecruteurTest {
+    private ConsultantRecruteur chargeeRecrutement;
     private Creneau creneau;
     private Candidat candidat;
 
     @Before
     public void init(){
-        chargeeRecrutement = new ChargeeRecrutement("", "", "");
+        chargeeRecrutement = new ConsultantRecruteur("", "", "");
         creneau = new Creneau(2018, 03, 02, 2018, 03, 04);
     }
 

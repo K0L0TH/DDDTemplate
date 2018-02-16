@@ -9,12 +9,12 @@ import com.app.ddd.core.planification.utils.ListUtils;
 
 import java.util.ArrayList;
 
-public class ChargeeRecrutement extends Entity {
+public class ConsultantRecruteur extends Entity {
     private Person person;
     private Profil profil;
     private ArrayList<Creneau> creneauxIndisponibilite;
 
-    public ChargeeRecrutement(String nom, String prenom, String securiteSociale){
+    public ConsultantRecruteur(String nom, String prenom, String securiteSociale){
         person = new Person(nom, prenom, securiteSociale);
         creneauxIndisponibilite = new ArrayList<>();
     }

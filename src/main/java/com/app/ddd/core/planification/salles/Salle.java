@@ -6,13 +6,17 @@ import com.app.ddd.core.planification.utils.ListUtils;
 import java.util.ArrayList;
 
 public class Salle {
-    private int identifiantSalle;
-    private String batiment;
+    private String nomSalle;
     private ArrayList<Creneau> creneauIndisponibilite;
 
 
-    public Salle() {
+    public Salle(String nomSalle) {
         creneauIndisponibilite = new ArrayList<>();
+        this.nomSalle = nomSalle;
+    }
+
+    public String getNomSalle() {
+        return nomSalle;
     }
 
     public boolean reserverUneSalle(Creneau creneau) {

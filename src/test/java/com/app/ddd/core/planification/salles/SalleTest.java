@@ -8,7 +8,7 @@ import static org.junit.Assert.*;
 public class SalleTest {
     @Test
     public void shouldNotSelectARoom(){
-        Salle salle = new Salle();
+        Salle salle = new Salle("Salle A");
         Creneau creneau = new Creneau(2018, 02, 26, 12, 2);
 
         assertEquals(salle.reserverUneSalle(creneau), true);
