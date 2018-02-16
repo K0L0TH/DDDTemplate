@@ -1,8 +1,5 @@
-package com.app.ddd.core.planification.sourcing;
+package com.app.ddd.core.sourcing;
 
-import com.app.ddd.core.sourcing.CTO;
-import com.app.ddd.core.sourcing.Candidat;
-import com.app.ddd.core.sourcing.Profile;
 import org.junit.Assert;
 import org.junit.Test;
 
